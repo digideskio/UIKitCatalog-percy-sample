@@ -4,6 +4,7 @@ Steps for adding percy tests:
 
 1. add a new iOS UI Testing target (swift) ![Add iOS UI Testing](/step_images/add_target.png)
 2. download and add XCTestCase+percySnapshot.swift to the UI Testing target. You can get the code from: [percy-ios-uitest-helpers](https://github.com/mfazekas/percy-ios-uitest-helpers)
+3. write/record UI Test and add percyScreenshot calls (we recommend starting with smaller number of screenshots and extending later)
 
 ## Discailmer
 

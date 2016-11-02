@@ -28,9 +28,50 @@ class UIKitCatalogPercyTests: XCTestCase {
         super.tearDown()
     }
     
+    func showCatalog(app: XCUIApplication)
+    {
+        if !app.navigationBars["UIKitCatalog"].exists {
+            app.navigationBars.buttons["UIKitCatalog"].tap()
+        }
+    }
+    
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        
+        showCatalog(app: app)
+        usleep(useconds_t(Double(UINavigationControllerHideShowBarDuration)*1000000.0))
+        percySnapshot(path: "UIKitCatalog")
+
+        let tablesQuery = app.tables
+        tablesQuery.staticTexts["Alert Controller"].tap()
+        tablesQuery.staticTexts["Simple"].tap()
+
+        percySnapshot(path: "Simple Alert")
+
+        app.alerts["A Short Title is Best"].buttons["OK"].tap()
+        showCatalog(app: app)
+
+        tablesQuery.staticTexts["ButtonViewController"].tap()
+
+        percySnapshot(path: "Buttons")
+        showCatalog(app: app)
+
+        tablesQuery.staticTexts["Page Control"].tap()
+
+        percySnapshot(path: "Page Control")
+        showCatalog(app: app)
+
+        tablesQuery.staticTexts["PickerViewController"].tap()
+
+        percySnapshot(path: "PickerViewController")
+
+        showCatalog(app: app)
+
+        tablesQuery.staticTexts["Segmented Controls"].tap()
+
+        percySnapshot(path: "Segmented Controls")
+
+        showCatalog(app: app)
     }
     
 }

@@ -41,7 +41,18 @@
 		B50F41081B1D284700E5147D /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50F41071B1D284700E5147D /* StackViewController.swift */; };
 		B51AD3F91B1A8A6A00083F63 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51AD3F71B1A8A6A00083F63 /* Search.storyboard */; };
 		B5C300DD1B0FC458003B05A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C300DC1B0FC458003B05A0 /* LaunchScreen.storyboard */; };
+		D8477C9F1DCA4BF10017B85E /* UIKitCatalogPercyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8477C9E1DCA4BF10017B85E /* UIKitCatalogPercyTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8477CA11DCA4BF10017B85E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228DB9EB18BC53F1002BA12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 228DB9F218BC53F1002BA12A;
+			remoteInfo = UIKitCatalog;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2200541A18BC54E8002A6E8B /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
@@ -81,10 +92,20 @@
 		B50F41071B1D284700E5147D /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		B51AD3F81B1A8A6A00083F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		B5C300DC1B0FC458003B05A0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8477C9C1DCA4BF10017B85E /* UIKitCatalogPercyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitCatalogPercyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8477C9E1DCA4BF10017B85E /* UIKitCatalogPercyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitCatalogPercyTests.swift; sourceTree = "<group>"; };
+		D8477CA01DCA4BF10017B85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		228DB9F018BC53F1002BA12A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8477C991DCA4BF10017B85E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -99,6 +120,7 @@
 			children = (
 				3E5C084A19748EAA00969DD7 /* README_original.md */,
 				228DB9F518BC53F1002BA12A /* UIKitCatalog */,
+				D8477C9D1DCA4BF10017B85E /* UIKitCatalogPercyTests */,
 				228DB9F418BC53F1002BA12A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				228DB9F318BC53F1002BA12A /* UIKitCatalog.app */,
+				D8477C9C1DCA4BF10017B85E /* UIKitCatalogPercyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,6 +240,15 @@
 			name = "Base View Controllers";
 			sourceTree = "<group>";
 		};
+		D8477C9D1DCA4BF10017B85E /* UIKitCatalogPercyTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8477C9E1DCA4BF10017B85E /* UIKitCatalogPercyTests.swift */,
+				D8477CA01DCA4BF10017B85E /* Info.plist */,
+			);
+			path = UIKitCatalogPercyTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,18 +269,42 @@
 			productReference = 228DB9F318BC53F1002BA12A /* UIKitCatalog.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D8477C9B1DCA4BF10017B85E /* UIKitCatalogPercyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8477CA51DCA4BF10017B85E /* Build configuration list for PBXNativeTarget "UIKitCatalogPercyTests" */;
+			buildPhases = (
+				D8477C981DCA4BF10017B85E /* Sources */,
+				D8477C991DCA4BF10017B85E /* Frameworks */,
+				D8477C9A1DCA4BF10017B85E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8477CA21DCA4BF10017B85E /* PBXTargetDependency */,
+			);
+			name = UIKitCatalogPercyTests;
+			productName = UIKitCatalogPercyTests;
+			productReference = D8477C9C1DCA4BF10017B85E /* UIKitCatalogPercyTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		228DB9EB18BC53F1002BA12A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					228DB9F218BC53F1002BA12A = {
 						LastSwiftMigration = 0800;
+					};
+					D8477C9B1DCA4BF10017B85E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = KU665FEG3W;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 228DB9F218BC53F1002BA12A;
 					};
 				};
 			};
@@ -266,6 +322,7 @@
 			projectRoot = "";
 			targets = (
 				228DB9F218BC53F1002BA12A /* UIKitCatalog */,
+				D8477C9B1DCA4BF10017B85E /* UIKitCatalogPercyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,6 +338,13 @@
 				B5C300DD1B0FC458003B05A0 /* LaunchScreen.storyboard in Resources */,
 				B51AD3F91B1A8A6A00083F63 /* Search.storyboard in Resources */,
 				228DB9FA18BC53F1002BA12A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8477C9A1DCA4BF10017B85E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +386,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8477C981DCA4BF10017B85E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8477C9F1DCA4BF10017B85E /* UIKitCatalogPercyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8477CA21DCA4BF10017B85E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 228DB9F218BC53F1002BA12A /* UIKitCatalog */;
+			targetProxy = D8477CA11DCA4BF10017B85E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		228DB9F818BC53F1002BA12A /* InfoPlist.strings */ = {
@@ -460,6 +540,50 @@
 			};
 			name = Release;
 		};
+		D8477CA31DCA4BF10017B85E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KU665FEG3W;
+				INFOPLIST_FILE = UIKitCatalogPercyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.szemafor.UIKitCatalogPercyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = UIKitCatalog;
+			};
+			name = Debug;
+		};
+		D8477CA41DCA4BF10017B85E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KU665FEG3W;
+				INFOPLIST_FILE = UIKitCatalogPercyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.szemafor.UIKitCatalogPercyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = UIKitCatalog;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -480,6 +604,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D8477CA51DCA4BF10017B85E /* Build configuration list for PBXNativeTarget "UIKitCatalogPercyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8477CA31DCA4BF10017B85E /* Debug */,
+				D8477CA41DCA4BF10017B85E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

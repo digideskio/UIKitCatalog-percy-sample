@@ -23,6 +23,12 @@ Steps for adding percy tests:
    ```
 5. run ```bundle install``` (if you don't have bundler installer you need to execute ```gem install bundler``` before)
 6. register to percy.io and make note of your write only api key.
+7. run 'xcodebuild' and percy locally make sure you specify derevedDataPath to xcodebuild. You can run your tests on multiple devices.
+
+   ```sh
+   rm -rf ./derived-data ; xcodebuild test -scheme UIKitCatalog -onlyTesting:UIKitCatalogPercyTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 5,OS=10.1' -destination 'platform=iOS Simulator,name=iPad Air,OS=10.1' -derivedDataPath ./derived-data
+   PERCY_TOKEN=*** PERCY_PROJECT=mfazekas/UIKitCatalog-percy-sample PERCY_BRANCH=master bundle exec ruby ./percy.rb ./derived-data
+   ```
 
 ## Discailmer
 

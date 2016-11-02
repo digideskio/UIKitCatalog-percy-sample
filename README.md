@@ -22,6 +22,7 @@ Steps for adding percy tests:
    percy.upload_screenshots
    ```
 5. run ```bundle install``` (if you don't have bundler installer you need to execute ```gem install bundler``` before)
+6. register to percy.io and make note of your write only api key.
 
 ## Discailmer
 

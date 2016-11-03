@@ -1,0 +1,6 @@
+language: objective-c
+os: osx
+osx_image: xcode8
+script:
+  - xcodebuild test -scheme UIKitCatalog -only-testing:UIKitCatalogPercyTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 5,OS=10.0' -destination 'platform=iOS Simulator,name=iPad Air,OS=10.0' -derivedDataPath ./derived-data
+  - bundle exec ruby ./percy.rb ./derived-data

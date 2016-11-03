@@ -30,6 +30,22 @@ Steps for adding percy tests:
    PERCY_TOKEN=*** PERCY_PROJECT=mfazekas/UIKitCatalog-percy-sample PERCY_BRANCH=master bundle exec ruby ./percy.rb ./derived-data
    ```
 
+8. Add travis.yml file and configure PERCY_TOKEN and PERCY_PROJECT in travis, and make sure your shceme is set to shared and autocreate:
+
+   ```yml
+   language: objective-c
+   os: osx
+   osx_image: xcode8
+   script:
+     - xcodebuild test -scheme UIKitCatalog -only-testing:UIKitCatalogPercyTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 5,OS=10.0' -destination 'platform=iOS Simulator,name=iPad Air,OS=10.0' -derivedDataPath ./derived-data
+     - bundle exec ruby ./percy.rb ./derived-data
+   ```
+
+   ![Travis config](/step_images/travis_settings.png)
+
+   ![XCode scheme sharing](/step_images/xcode_scheme.png)
+
 ## Discailmer
 
 The is based on [UIKitCatalog](https://developer.apple.com/library/content/samplecode/UICatalog/) sample code from Apple. See LICENSE_original and README_original for information on the sample code itself.
+

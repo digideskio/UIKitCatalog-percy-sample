@@ -21,6 +21,7 @@ Steps for adding percy tests:
    percy.derived_data_dir=ARGV[0]
    percy.upload_screenshots
    ```
+5. run ```bundle install``` (if you don't have bundler installer you need to execute ```gem install bundler``` before)
 
 ## Discailmer
 
